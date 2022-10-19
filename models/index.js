@@ -1,7 +1,7 @@
 const User = require("./User")
 const Post = require("./Post")
 const Comment = require("./Comment")
-const Like = require("./Like")
+const Likes = require("./Likes")
 const Dislike = require("./Dislike")
 
 // create associations
@@ -15,7 +15,7 @@ Post.belongsTo(User, {
 })
 
 User.belongsToMany(Post, {
-  through: Like,
+  through: Likes,
   as: "liked_posts",
   foreignKey: "user_id",
 })
@@ -27,7 +27,7 @@ User.belongsToMany(Post, {
 })
 
 Post.belongsToMany(User, {
-  through: Like,
+  through: Likes,
   as: "liked_posts",
   foreignKey: "post_id",
 })
@@ -38,7 +38,7 @@ Post.belongsToMany(User, {
   foreignKey: "post_id",
 })
 
-Like.belongsTo(User, {
+Likes.belongsTo(User, {
   foreignKey: "user_id",
 })
 
@@ -46,7 +46,7 @@ Dislike.belongsTo(User, {
   foreignKey: "user_id",
 })
 
-Like.belongsTo(Post, {
+Likes.belongsTo(Post, {
   foreignKey: "post_id",
 })
 
@@ -54,7 +54,7 @@ Dislike.belongsTo(Post, {
   foreignKey: "post_id",
 })
 
-User.hasMany(Like, {
+User.hasMany(Likes, {
   foreignKey: "user_id",
 })
 
@@ -62,7 +62,7 @@ User.hasMany(Dislike, {
   foreignKey: "user_id",
 })
 
-Post.hasMany(Like, {
+Post.hasMany(Likes, {
   foreignKey: "post_id",
 })
 
@@ -86,4 +86,4 @@ Post.hasMany(Comment, {
   foreignKey: "post_id",
 })
 
-module.exports = { User, Post, Like, Dislike, Comment }
+module.exports = { User, Post, Likes, Dislike, Comment }
