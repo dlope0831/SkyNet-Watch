@@ -32,6 +32,7 @@ router.get("/:id", (req, res) => {
     })
 })
 
+
 // POST /api/users create new user
 router.post("/", (req, res) => {
   User.create({
