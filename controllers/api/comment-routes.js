@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
     })
 })
 
-// POST - capable to create comment
+// POST - /api/comments capable to create comment
 router.post("/", withAuth, (req, res) => {
   if (req.session) {
     Comment.create({
@@ -28,7 +28,7 @@ router.post("/", withAuth, (req, res) => {
   }
 })
 
-// DELETE - User has capable to delete the comment
+// DELETE - /api/comments/:id User has capable to delete the comment
 router.delete("/:id", (req, res) => {
   Comment.destroy({
     where: {
