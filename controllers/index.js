@@ -1,27 +1,15 @@
-const router = require("express").Router()
-const apiRoutes = require("./api")
+const router = require('express').Router();
+const homeRoutes = require('./home-routes');
+const dashboardRoutes = require('./dashboard-routes');
 
-router.use("/api", apiRoutes)
+const apiRoutes = require('./api');
 
-router.get("/", async (req, res) => {
-  res.render("homepage")
-})
+router.use('/api', apiRoutes);
+router.use('/', homeRoutes);
+router.use('/dashboard', dashboardRoutes);
 
-router.get('/login', (req, res) => {
-  console.log('get login route')
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
-  res.render('login');
-})
+router.use((req, res) => {
+  res.status(404).end();
+});
 
-// router.get('/signup', (req, res) => {
-//   if (req.session.loggedIn) {
-//     res.redirect('/');
-//     return;
-//   }
-//   res.render('signup');
-// })
-
-module.exports = router
+module.exports = router;

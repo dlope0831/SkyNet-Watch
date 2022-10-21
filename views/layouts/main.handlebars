@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Test</title>
+  <title>SkyNet Watch</title>
 </head>
 
 <body>
@@ -11,11 +11,22 @@
       <h1>
         &#128247 SkyNet Watch &#128247  
       </h1>
+      <nav>
+        {{#if loggedIn}}
+        <a href="/dashboard">dashboard</a>
+        <button id="logout" class="btn-no-style">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav>
     </header>
       <main class="container container-fluid mt-5">
         {{{ body }}}
       </main>
   </div>
+  {{#if loggedIn}}
+  <script src="/public/js/logout.js"></script>
+  {{/if}}
   </body>
 
 </html>
