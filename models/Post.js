@@ -2,7 +2,7 @@ const { Model, DataTypes } = require("sequelize")
 const sequelize = require("../config/connection")
 
 class Post extends Model {
-  static upLikes(body, models) {
+  static upvote(body, models) {
     return models.Likes.create({
       user_id: body.user_id,
       post_id: body.post_id,
@@ -26,7 +26,7 @@ class Post extends Model {
       })
     })
   }
-  static upDislike(body, models) {
+  static downvote(body, models) {
     return models.Dislike.create({
       user_id: body.user_id,
       post_id: body.post_id,
