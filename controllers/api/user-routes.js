@@ -84,13 +84,13 @@ router.post("/login", (req, res) => {
 })
 
 // POST /api/users/logout
-router.post("/logout", (req, res) => {
+router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {
-    res.session.destroy(() => {
-      res.status(204).end()
-    })
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
   } else {
-    res.status(404).end()
+    res.status(404).end();
   }
 })
 

@@ -1,5 +1,3 @@
-const { json } = require("sequelize");
-
 async function signupFormHandler(event) {
     event.preventDefault();
     
