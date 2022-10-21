@@ -1,0 +1,26 @@
+<h2>Add comment</h2>
+
+<section>
+    {{> post-info post}}
+
+    {{#if loggedIn}}
+    <form class="comment-form">
+        <div>
+            <textarea class="form-control"name="comment-body"></textarea>
+        </div>
+        <div>
+            <button type="submit" class="btn">Add comment</button>
+            <button type="button" class="upvote-btn">Like</button>
+            <button type="button" class="downvote-btn">Dislike</button>
+        </div>
+    </form>
+    {{/if}}
+</section>
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/js/comment.js"></script>
+<script src="/js/like.js"></script>
+<script src="/js/dislike.js"></script>
+{{/if}}

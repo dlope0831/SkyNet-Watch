@@ -32,7 +32,6 @@ router.get("/:id", (req, res) => {
     })
 })
 
-
 // POST /api/users create new user
 router.post("/", (req, res) => {
   User.create({
@@ -84,13 +83,13 @@ router.post("/login", (req, res) => {
 })
 
 // POST /api/users/logout
-router.post('/logout', (req, res) => {
+router.post("/logout", (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
-      res.status(204).end();
-    });
+      res.status(204).end()
+    })
   } else {
-    res.status(404).end();
+    res.status(404).end()
   }
 })
 

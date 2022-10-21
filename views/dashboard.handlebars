@@ -1,5 +1,6 @@
+<h2>Dashboard: My activities</h2>
 <section>
-  <h2>Create New Post</h2>
+  <h3>Create New Post</h3>
 
   <form class="new-post-form">
     <div>
@@ -15,15 +16,16 @@
 </section>
 {{#if posts.length}}
 <section>
-  <h2>Your Posts</h2>
+  <h3>Your Posts</h3>
   <ol>
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-content">Edit post</a>
+      <button><a href="/dashboard/edit/{{id}}" class="edit-content">Edit post</a></button>
     </li>
     {{/each}}
   </ol>
 </section>
 {{/if}}
+<script src="/js/add-post.js"></script>
 <script src="./js/logout.js"></script>

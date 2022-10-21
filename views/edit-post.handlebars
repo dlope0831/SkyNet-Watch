@@ -1,0 +1,27 @@
+<section>
+  <form class="edit-form">
+    <div>
+      <label for="post-title" class="form-label">Title</label>
+      <input
+        class="form-control"
+        type="text"
+        name="post-title"
+        value="{{post.title}}"
+      />
+    </div>
+    <div>
+      <label for="post-text form-label">Content</label>
+      <textarea
+        type="text"
+        name="post-content"
+        class="form-control"
+      >{{post.post_content}}</textarea>
+    </div>
+    <button type="submit" class="btn">Update post</button>
+    <button type="button" class="delete-post btn">Delete this post</button>
+
+  </form>
+</section>
+
+<script src="/js/edit-post.js"></script>
+<script src="/js/delete-post.js"></script>
