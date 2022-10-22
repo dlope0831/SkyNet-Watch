@@ -10,8 +10,10 @@
         </div>
         <div>
             <button type="submit" class="btn">Add comment</button>
+            {{#if showButton}}
             <button type="button" class="upvote-btn">Like</button>
             <button type="button" class="downvote-btn">Dislike</button>
+            {{/if}}
         </div>
     </form>
     {{/if}}
