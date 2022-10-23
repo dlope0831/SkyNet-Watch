@@ -12,3 +12,7 @@ margin-right: auto;
 .nav-link:hover{
 background-color: #93DEFE;
 }
+
+body{
+    background-color: #F7F7F7;
+}
