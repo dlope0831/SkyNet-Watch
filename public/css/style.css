@@ -1,18 +1,20 @@
 @media screen and (min-width:992px) {
-   .navbar-nav{
-text-align: center;
-font-size: 20px;
-margin-left: 27%;
-margin-right: auto;
-}
-}
-.nav-link{
-    border-radius: 15px;
-}
-.nav-link:hover{
-background-color: #93DEFE;
+    .navbar-nav {
+        text-align: center;
+        font-size: 20px;
+        margin-left: 27%;
+        margin-right: auto;
+    }
 }
 
-body{
-    background-color: #F7F7F7;
+.nav-link {
+    border-radius: 15px;
+}
+
+.nav-link:hover {
+    background-color: #93DEFE;
+}
+
+body {
+    background-color: #EFEDE0;
 }
