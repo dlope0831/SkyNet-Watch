@@ -1,3 +1,19 @@
+{{#if loggedIn}}
 <div>
-    <h2>checking</h2>
+<h2>Homepage! List of all activities</h2>
 </div>
+{{#each posts as |post|}}
+<article>
+    {{> post-info post}}
+</article>
+{{/each}}
+{{else}}
+<h3 class="text-center text-capitalize">Please log in or sign up to see all community activities</h3>
+<script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+<script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+<lord-icon class="icon-home"
+    src="https://cdn.lordicon.com/azartkjs.json"
+    trigger="boomerang"
+    style="width:250px;height:250px">
+</lord-icon>
+{{/if}}

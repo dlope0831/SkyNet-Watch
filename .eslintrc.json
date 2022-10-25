@@ -3,7 +3,7 @@
   "env": {
     "browser": true,
     "node": true,
-    "es7": true
+    "es6": true
   },
   "rules": {
     "no-duplicate-case": "error",
@@ -26,7 +26,7 @@
     "no-redeclare": "error",
     "brace-style": "error",
     "indent": ["error", 2],
-    "linebreak-style": ["error", "unix"],
+    "linebreak-style": ["error", 0],
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
     "radix": "off"

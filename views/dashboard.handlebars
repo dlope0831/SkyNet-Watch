@@ -1,0 +1,34 @@
+<div class="dashboard-card">
+
+<h2>Dashboard: My activities</h2>
+<section>
+  <h3>Create New Post</h3>
+
+  <form class="new-post-form">
+    <div>
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <label for="post-content">Content</label>
+      <input id="post-content" name="post-content" />
+    </div>
+    <button type="submit" class="btn">Create</button>
+  </form>
+</section>
+{{#if posts.length}}
+<section>
+  <h3>Your Posts</h3>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <button><a href="/dashboard/edit/{{id}}" class="edit-content">Edit post</a></button>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+</div>
+<script src="/js/add-post.js"></script>
+<script src="./js/logout.js"></script>
