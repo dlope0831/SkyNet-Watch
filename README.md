@@ -3,7 +3,7 @@
 
 <div align="center">
     <a href="https://polar-atoll-04436.herokuapp.com/" target="_blank">
-    <img src="" alt="SkyNet Landing Page" width="80%" />
+    <img src="./public/images/Readme-header.png" alt="SkyNet Landing Page" width="80%" />
     </a>
 </div>
 
@@ -15,7 +15,8 @@ Create valuable connections with your neighbors by creating post of upcoming eve
 
 
 <div align="center">
-    <img src=".gif" alt="SkyNet Watch Landing Page" width="80%" />
+<!-- need to add walkthrough video -->
+    <img src=".gif" alt="SkyNet Watch Landing Page" width="80%"/>
     </a>
 </div>
 
@@ -30,7 +31,8 @@ Once your neighbors join, everyone can create posts to the page. Build an online
 
 <div align="center">
   <a href="">
-    <img src="" alt="Screenshot of SkyNet Watch UI functionality">
+  <!-- images of post and activity page -->
+    <img src="./public/images/SkyNet-Landing -Page.png" alt="Screenshot of SkyNet Watch UI functionality">
   </a>
 </div>
 
@@ -79,11 +81,10 @@ Feel free to submit any features you'd like to see via the Issues section of thi
 * Daniela Lopez, [@dlope0831](https://github.com/dlope0831)
 * Jeniree Castro, [@jenireeac](https://github.com/jenireeac)
 * Joseph Lara, [@jlara65](https://github.com/jlara65)
+* David Graham, [@dgrahm742](https://github.com/dgraham742)
 
 <div align="center">
-    <img src="" alt="Daniela Lopez, web developer" width="40%"/>
-    <img src="" alt="Jeniree Castro, web developer" width="40%"/>
-    <img src="" alt="Joseph Lara, web developer" width="40%"/>
+    <img src="./public/images/Team-Picture.png" alt="Team Picture" width="80%"/>
 </div>
 
 To find out more about the inspiration behind this project and some frequently asked questions, check out our presentation here: [SkyNet Watch Presentation]()  
