@@ -16,7 +16,10 @@
 .nav-link:hover {
     background-color: #E3B448;
 }
-
+.activities-card{
+background-color: #E3B448;
+;
+}
 body {
     background-color: #CBD18F;
 }
@@ -31,7 +34,7 @@ text-align: center;
  margin-right: auto;
 }
 
-.signup-form, .login-card{
+.login-card{
     box-shadow: 0 8px 10px 0;
 }
 .home-card{
