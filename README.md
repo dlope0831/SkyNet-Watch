@@ -1,3 +1,4 @@
+<!-- prettier ignore -->
 # SkyNet Watch
 
 <div align="center">

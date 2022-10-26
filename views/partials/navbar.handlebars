@@ -1,28 +1,29 @@
-<nav class="navbar navbar-expand-lg ">
+<nav class="navbar navbar-expand-lg" style="background-color: #3A6B35">
   <div class="container-fluid ">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-      <img src="/images/logo.png" width="250px" alt="" class="d-block align-middle mr-2">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <img src="/images/logo.png" width="200px" height="200px" alt="" class="d-block align-middle mr-2">
       <ul class="navbar-nav">
+   {{#if loggedIn}}
         <li>
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/" id="">Home</a>
+        </li>
+     
+        <li>
+          <a class="nav-link text-dark " href="/dashboard" >Dashboard</a>
         </li>
         <li>
-          <a class="nav-link text-dark " href="#">My Activities</a>
+          <a class="nav-link text-dark" href="#" id="logout">Log Out</a>
         </li>
-        <li>
-          <a class="nav-link text-dark" href="/login">Login</a>
-
-        </li>
-
-        <li>
-          <a class="nav-link text-dark" href="/signup">Sign Up</a>
-
-        </li>
+         {{/if}}
       </ul>
     </div>
   </div>
 </nav>
+   <li>
+          <a class="nav-link text-dark" href="/login">Login</a>
+
+        </li>
