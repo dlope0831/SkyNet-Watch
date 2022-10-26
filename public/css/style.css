@@ -32,7 +32,7 @@ text-align: center;
 }
 
 .signup-form, .login-card{
-    background-color:#E3B448 ;
+    box-shadow: 0 8px 10px 0;
 }
 .home-card{
     font-family: 'Neucha', cursive;
@@ -44,7 +44,9 @@ margin: 80px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: #E3B448;
     width: 150px;
     box-shadow: 0 8px 10px 0;
+}
+.btn, .home-button{
+    background-color: #E3B448;
 }
