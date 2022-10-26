@@ -31,8 +31,9 @@ Once your neighbors join, everyone can create posts to the page. Build an online
 
 <div align="center">
   <a href="">
-  <!-- images of post and activity page -->
-    <img src="./public/images/SkyNet-Landing -Page.png" alt="Screenshot of SkyNet Watch UI functionality">
+    <img src="./public/images/SkyNet-Landing -Page.png" alt="Screenshot of SkyNet Watch UI functionality" width="80%">
+    <img src="./public/images/SkyNet-homepage.png" alt="Screenshot of SkyNet Watch UI functionality" width="80%">
+    <img src="./public/images/SkyNet-post-page.png" alt="Screenshot of SkyNet Watch UI functionality" width="80%">
   </a>
 </div>
 
