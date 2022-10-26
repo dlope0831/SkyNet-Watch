@@ -47,7 +47,7 @@ margin: 80px;
     width: 150px;
     box-shadow: 0 8px 10px 0;
 }
-.btn, .home-button{
+ .home-button{
     background-color: #E3B448;
 }
 
@@ -58,3 +58,4 @@ margin: 80px;
     
     list-style: none;
 }
+
