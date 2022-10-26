@@ -31,8 +31,9 @@ Once your neighbors join, everyone can create posts to the page. Build an online
 
 <div align="center">
   <a href="">
-  <!-- images of post and activity page -->
-    <img src="./public/images/SkyNet-Landing -Page.png" alt="Screenshot of SkyNet Watch UI functionality">
+    <img src="./public/images/SkyNet-Landing -Page.png" alt="Screenshot of SkyNet Watch UI functionality" width="80%">
+    <img src="./public/images/SkyNet-homepage.png" alt="Screenshot of SkyNet Watch UI functionality" width="80%">
+    <img src="./public/images/SkyNet-post-page.png" alt="Screenshot of SkyNet Watch UI functionality" width="80%">
   </a>
 </div>
 
@@ -68,6 +69,7 @@ SkyNet Watch was built using the following technologies:
 * [Express-handlebars](https://www.npmjs.com/package/express-handlebars) - Template engine
 * [Express-Session](https://www.npmjs.com/package/express-session) - Middleware to create and manage a session
 * [Connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize) - Session store for connect-session
+* [Chalk](https://www.npmjs.com/package/chalk) - Terminal Styling
 
 
 ## Methodology
@@ -87,5 +89,5 @@ Feel free to submit any features you'd like to see via the Issues section of thi
     <img src="./public/images/Team-Picture.png" alt="Team Picture" width="80%"/>
 </div>
 
-To find out more about the inspiration behind this project and some frequently asked questions, check out our presentation here: [SkyNet Watch Presentation]()  
+To find out more about the inspiration behind this project and some frequently asked questions, check out our presentation here: [SkyNet Watch Presentation](https://www.canva.com/design/DAFP_2oqbOs/xQjiC4rumsYCmouumQzwDA/edit?utm_content=DAFP_2oqbOs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)  
 

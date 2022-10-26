@@ -2,9 +2,11 @@ const router = require("express").Router()
 const sequelize = require("../config/connection")
 const { Post, User, Comment } = require("../models")
 const withAuth = require("../utils/auth")
+const chalk = require("chalk")
 
 // get all posts
 router.get("/", (req, res) => {
+  console.log(chalk.blue.bold("======Pulling All Activities!!====="))
   Post.findAll({
     where: {
       user_id: req.session.user_id,
