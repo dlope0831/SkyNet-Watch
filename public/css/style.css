@@ -2,7 +2,7 @@
     .navbar-nav {
         text-align: center;
         font-size: 25px;
-        margin-left: 27%;
+        margin-left: 32%;
         margin-right: auto;
 
     }
@@ -21,7 +21,7 @@ body {
     background-color: #CBD18F;
 }
 .dashboard-card{
-background-color: #ffffff;
+
 text-align: center;
 }
 
@@ -47,12 +47,10 @@ margin: 80px;
     width: 150px;
     box-shadow: 0 8px 10px 0;
 }
-.btn, .home-button{
+ .home-button{
     background-color: #E3B448;
 }
-.new-post-form{
-    width: 60%;
-}
+
 .form-control, .login-card , signup-form {
     text-align: center;
 }
@@ -60,3 +58,4 @@ margin: 80px;
     
     list-style: none;
 }
+

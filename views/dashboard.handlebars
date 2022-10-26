@@ -2,9 +2,8 @@
   <!--<h2>Dashboard: My activities</h2>-->
   <section class="row  d-flex justify-content-center m-5 h-100 ">
     <h3 class="p-4"><u>Create New Post</u></h3>
-
-    <form class="new-post-form fs-4">
-      <div class="form-outline ">
+    <form class="new-post-form  fs-4">
+      <div class="form-outline  ">
         <label class="form-label" for="typeText">Title</label>
         <input type="text" id="post-title" name="post-title" class="form-control border border-success" />
       </div>
@@ -16,13 +15,13 @@
     </form>
   </section>
   {{#if posts.length}}
-  <section class="m-3 post-card">
+  <section class="m-3 post-card ">
     <h3><u>Your Posts</u></h3>
-    <ol class="list">
+    <ol class="list ">
       {{#each posts as |post|}}
-      <li>
+      <li >
         {{> post-info post}}
-        <button><a href="/dashboard/edit/{{id}}" class="edit-content text-decoration-none">Edit post</a></button>
+        <button class="btn btn-light text-reset"><a href="/dashboard/edit/{{id}}" class="edit-content text-decoration-none text-capa">Edit post</a></button>
       </li>
       {{/each}}
     </ol>

@@ -1,7 +1,7 @@
-<article class="card text-center">
+<article class=" text-center text-capitalize">
   <div class="dashboard-post">
     <p class="card-title post-title">
-      <a  class="text-decoration-none text-reset  " href="/post/{{id}}">{{title}}</a>
+      <a  class="text-decoration-none text-reset " href="/post/{{id}}">{{title}}</a>
     </p>
     <div class="post-body ">
       <p class="post-content fw-semibold">{{post_content}}</p>
@@ -13,11 +13,11 @@
     {{dislike_count}}
     Dislike
     <p class=" post-author">Posted by
-      <span class="post-username">{{user.username}}</span>
+      <span class="post-username ">{{user.username}}</span>
       on
       {{format_date created_at}}
       |
-      <a class="text-decoration-none text-reset" href="/post/{{id}}">
+      <a class="text-decoration-none  text-success" href="/post/{{id}}">
         {{comments.length}}
         Comments</a></p>
 
