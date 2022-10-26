@@ -14,21 +14,49 @@
 }
 
 .nav-link:hover {
-    background-color: #93DEFE;
+    background-color: #E3B448;
 }
 
 body {
     background-color: #CBD18F;
 }
 .dashboard-card{
-background-color: #8AAAE5;
+background-color: #ffffff;
 text-align: center;
 }
+
 .icon-home{
  display: block;
  margin-left: auto;
  margin-right: auto;
 }
-.signup-form, .login-card{
-    background-color:#E3B448 ;
+
+.login-card{
+    box-shadow: 0 8px 10px 0;
+}
+.home-card{
+    font-family: 'Neucha', cursive;
+    color: #000000 ;
+margin: 80px;
+    
+}
+.home-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    box-shadow: 0 8px 10px 0;
+}
+.btn, .home-button{
+    background-color: #E3B448;
+}
+.new-post-form{
+    width: 60%;
+}
+.form-control, .login-card , signup-form {
+    text-align: center;
+}
+.post-card, .list{
+    
+    list-style: none;
 }

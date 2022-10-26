@@ -1,10 +1,13 @@
 const router = require("express").Router()
 const sequelize = require("../config/connection")
 const { Post, User, Comment, Likes } = require("../models")
+const chalk = require("chalk")
 
 // get all posts
 router.get("/", (req, res) => {
+  console.log(chalk.blue.bold("======Pulling All Activities!!====="))
   Post.findAll({
+    order: [["created_at", "DESC"]],
     attributes: [
       "id",
       "post_content",
@@ -101,33 +104,33 @@ router.get("/post/:id", (req, res) => {
         },
       },
     ],
-  })
-    .then((dbPostData) => {
-      if (!dbPostData) {
-        res.status(404).json({ message: "No post found with this id" })
-        return
-      }
-      Likes.findOne({
-        where: {
-          post_id: req.params.id,
-          user_id: req.session.user_id
-        }
-      }) .then (likeData => {
+  }).then((dbPostData) => {
+    if (!dbPostData) {
+      res.status(404).json({ message: "No post found with this id" })
+      return
+    }
+    Likes.findOne({
+      where: {
+        post_id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    })
+      .then((likeData) => {
         //serialize the data
-      const post = dbPostData.get({ plain: true })
+        const post = dbPostData.get({ plain: true })
 
-      //pass the data to template
-      res.render("single-post", {
-        post,
-        loggedIn: req.session.loggedIn,
-        showButton: likeData === null
+        //pass the data to template
+        res.render("single-post", {
+          post,
+          loggedIn: req.session.loggedIn,
+          showButton: likeData === null,
+        })
       })
-    })
-    .catch((err) => {
-      console.log(err)
-      res.status(500).json(err)
+      .catch((err) => {
+        console.log(err)
+        res.status(500).json(err)
       })
-    })
   })
+})
 
 module.exports = router
