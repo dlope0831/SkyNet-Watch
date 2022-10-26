@@ -16,10 +16,7 @@
 .nav-link:hover {
     background-color: #E3B448;
 }
-.activities-card{
-background-color: #E3B448;
-;
-}
+
 body {
     background-color: #CBD18F;
 }
@@ -52,4 +49,14 @@ margin: 80px;
 }
 .btn, .home-button{
     background-color: #E3B448;
+}
+.new-post-form{
+    width: 60%;
+}
+.form-control, .login-card , signup-form {
+    text-align: center;
+}
+.post-card, .list{
+    
+    list-style: none;
 }
