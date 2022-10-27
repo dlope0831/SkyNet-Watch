@@ -14,12 +14,6 @@
 Create valuable connections with your neighbors by creating post of upcoming events, commenting on other users posts, and interacting with others - all in real time.
 
 
-<div align="center">
-<!-- need to add walkthrough video -->
-    <img src=".gif" alt="SkyNet Watch Landing Page" width="80%"/>
-    </a>
-</div>
-
 SkyNet Watch is built with Express, mySQL2, Sequelize, and Handlebars to give users the real-time ability to
 create posts that are displayed on the activites page. Users can interact with other posts by commenting or clicking a reaction button,"Like" or "Dislike".
 
@@ -27,7 +21,6 @@ After creating your account, you can create a post that will be visable on the h
 
 Once your neighbors join, everyone can create posts to the page. Build an online community with your neighbors by creating post of upcoming events, commenting on a recent suspicious activity - all in real time.
 
-**Check out a walkthrough demo of SkyNet Watch here:** Insert Link
 
 <div align="center">
   <a href="https://polar-atoll-04436.herokuapp.com/">
@@ -78,14 +71,14 @@ Feel free to submit any features you'd like to see via the Issues section of thi
 
 ## The Team
 
-* Daniela Lopez, [@dlope0831](https://github.com/dlope0831)
-* Jeniree Castro, [@jenireeac](https://github.com/jenireeac)
-* Joseph Lara, [@jlara65](https://github.com/jlara65)
-* David Graham, [@dgrahm742](https://github.com/dgraham742)
+* Daniela Lopez, Back End Development [@dlope0831](https://github.com/dlope0831)
+* Jeniree Castro, Front End Development[@jenireeac](https://github.com/jenireeac)
+* Joseph Lara, Back End Development [@jlara65](https://github.com/jlara65)
+* David Graham, Support [@dgrahm742](https://github.com/dgraham742)
 
 <div align="center">
     <img src="./public/images/Team-Picture.png" alt="Team Picture" width="80%"/>
 </div>
 
-To find out more about the inspiration behind this project and some frequently asked questions, check out our presentation here: [SkyNet Watch Presentation](https://www.canva.com/design/DAFP_2oqbOs/xQjiC4rumsYCmouumQzwDA/edit?utm_content=DAFP_2oqbOs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)  
+To find out more about the inspiration behind this project, check out our presentation here: [SkyNet Watch Presentation](https://www.canva.com/design/DAFP_2oqbOs/xQjiC4rumsYCmouumQzwDA/edit?utm_content=DAFP_2oqbOs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)  
 
