@@ -30,10 +30,8 @@ Once your neighbors join, everyone can create posts to the page. Build an online
 **Check out a walkthrough demo of SkyNet Watch here:** Insert Link
 
 <div align="center">
-  <a href="">
+  <a href="https://polar-atoll-04436.herokuapp.com/">
     <img src="./public/images/SkyNet-Landing -Page.png" alt="Screenshot of SkyNet Watch UI functionality" width="80%">
-    <img src="./public/images/SkyNet-homepage.png" alt="Screenshot of SkyNet Watch UI functionality" width="80%">
-    <img src="./public/images/SkyNet-post-page.png" alt="Screenshot of SkyNet Watch UI functionality" width="80%">
   </a>
 </div>
 
