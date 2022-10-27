@@ -1,34 +1,32 @@
-<div class="dashboard-card">
-
-<h2>Dashboard: My activities</h2>
-<section>
-  <h3>Create New Post</h3>
-
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
-    </div>
-    <div>
-      <label for="post-content">Content</label>
-      <input id="post-content" name="post-content" />
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
-</section>
-{{#if posts.length}}
-<section>
-  <h3>Your Posts</h3>
-  <ol>
-    {{#each posts as |post|}}
-    <li>
-      {{> post-info post}}
-      <button><a href="/dashboard/edit/{{id}}" class="edit-content">Edit post</a></button>
-    </li>
-    {{/each}}
-  </ol>
-</section>
-{{/if}}
+<div class="dashboard-card container rounded-4">
+  <!--<h2>Dashboard: My activities</h2>-->
+  <section class="row  d-flex justify-content-center m-5 h-100 ">
+    <h3 class="p-4"><u>Create New Post</u></h3>
+    <form class="new-post-form  fs-4">
+      <div class="form-outline  ">
+        <label class="form-label" for="typeText">Title</label>
+        <input type="text" id="post-title" name="post-title" class="form-control border border-success" />
+      </div>
+      <div class="form-outline ">
+        <label class="form-label" for="typeText">Content</label>
+        <input type="text" id="post-content" name="post-content" class=" form-control border border-success" />
+      </div>
+      <button type="submit" class="btn btn-lg m-3">Create</button>
+    </form>
+  </section>
+  {{#if posts.length}}
+  <section class="m-3 post-card ">
+    <h3><u>Your Posts</u></h3>
+    <ol class="list ">
+      {{#each posts as |post|}}
+      <li >
+        {{> post-info post}}
+        <button class="btn btn-light text-reset"><a href="/dashboard/edit/{{id}}" class="edit-content text-decoration-none text-capa">Edit post</a></button>
+      </li>
+      {{/each}}
+    </ol>
+  </section>
+  {{/if}}
 </div>
 <script src="/js/add-post.js"></script>
 <script src="./js/logout.js"></script>

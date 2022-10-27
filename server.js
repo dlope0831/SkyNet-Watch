@@ -19,6 +19,8 @@ const sess = {
   saveUninitialized: true,
   store: new SeqeulizeStore({
     db: sequelize,
+    checkExpirationInterval: 1 * 60 * 1000, // check every minute for expiration
+    expiration: 10 * 60 * 1000, // session expire after 10 minutes
   }),
 }
 

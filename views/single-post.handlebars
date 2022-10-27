@@ -1,6 +1,6 @@
-<h2>Add comment</h2>
+<h2 class="text-center m-4">Add Comment</h2>
 
-<section>
+<section class="text-capitalize m-5">
     {{> post-info post}}
 
     {{#if loggedIn}}
@@ -8,17 +8,18 @@
         <div>
             <textarea class="form-control"name="comment-body"></textarea>
         </div>
-        <div>
-            <button type="submit" class="btn">Add comment</button>
-           <button class="upvote-btn ">
+        <div class="text-center">
+            <button type="submit" class=" btn btn-warning m-4">Add Comment</button>
+            <div class="justify-content-evenly "> 
+           <button class="upvote-btn btn btn-outline-success">
             <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
 <lord-icon
-    src="https://cdn.lordicon.com/iwaotjbp.json"
+    src="https://cdn.lordicon.com/iwaotjbp.json "
     trigger="hover"
     style="width:30px;height:30px">
 </lord-icon>
            </button>
-            <button type="button" class="downvote-btn">
+            <button type="button" class="downvote-btn btn btn-outline-success">
                 <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
 <lord-icon
     src="https://cdn.lordicon.com/wwneckwc.json"
@@ -26,6 +27,7 @@
     style="width:32px;height:32px">
 </lord-icon>
             </button>
+        </div>
         </div>
     </form>
     {{/if}}
